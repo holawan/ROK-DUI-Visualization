@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 시도별 발생 현황*/
+.timetable { margin-top:20px;  padding:15px; width:100%; height:auto; overflow:hidden; border:1px solid #dcdcdc;}
+.timetable .info { width:100%;  font-size:16px; line-height:1.25em; color:#002462; text-align:center; word-break:keep-all; }
+.timetable .info span { font-weight:600; }
+@media (max-width:767px) {
+	.timetable .info { font-size:14px; }
+}
+
+.copykogl {width:100%; padding:20px; margin-top:24px; background-color:#f8fbff; }
+.copykogl .copyimg { text-align:center; background-repeat:no-repeat; background-position:0 0;}
+.copykogl .copytext { padding-left:20px; font-size:18px; line-height:20px; word-break:keep-all}
+.copykogl .copytext strong { font-weight:600; color:#333;}
+.copykogl.type1 .copyimg { width:150px; height:55px; background-image:url(../../img/copy_type1_img.png); }
+
+@media (min-width:1180px) {
+	.copykogl { display:table;}
+	.copykogl > * { display:table-cell; }
+}
+@media (min-width:768px) and (max-width:1179px) {
+	.copykogl { display:table;}
+	.copykogl > * { display:table-cell; }
+}
+@media (max-width:767px) {
+	.copykogl { display:block;}
+	.copykogl .copyimg { display:block; background-position:center 0; background-size: auto 55px;}
+	.copykogl .copytext { font-size:30; }
+	.copykogl.type1 .copyimg,
+	.copykogl.type0 .copyimg  { width:100%; height:70px; }	
+	.copykogl .copytext {display:block; width:100%; padding-left:0;}
+}
+
+.regional_patient_status_A .rpsa_map .rpsam_descript{
+	font-size: 20px;
+}
